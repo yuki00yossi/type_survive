@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>Zombie Survive</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Load Web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 使用楽曲：魔王魂 -->
+    <main id="screen">
+        <!-- title screen -->
+        <section id="title">
+            <h2 class="title">Type To Survive</h2>
+            <img src="https://studio-babe.com/wp-content/uploads/2023/04/1-1.png" alt="" style="display: block; position: absolute; top: 35%; left: 15%; height:650px;">
+            <img src="https://studio-babe.com/wp-content/uploads/2023/04/1-1.png" alt="" style="display: block; position: absolute; top: 65%; left: 44%; height:650px;">
+            <img src="https://studio-babe.com/wp-content/uploads/2023/04/1-1.png" alt="" style="display: block; position: absolute; top: 35%; left: 65%; height:650px;">
+            <button id="btn-start">Click To Start</button>
+        </section>
+        <!-- menu screen -->
+        <section id="menu" class="hidden">
+            <h2 class="title">Choose Menu</h2>
+            <div class="menu">
+                <div class="menu-left">
+                    <div class="challenge menu-item">Challenge Mode</div>
+                </div>
+                <div class="menu-right">
+                    <div class="story menu-item preparing">Story Mode
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div id="credit" style="color: white;">
+        音楽：魔王魂
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/words/en.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/challenge.js"></script>
+</body>
+
+</html>

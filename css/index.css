@@ -1,0 +1,164 @@
+:root {
+    --zombie-font: 'Creepster', 'cursive';
+    --main-red: rgb(163, 6, 6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+#screen {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    height: 720px;
+    background-color: black;
+    overflow: hidden;
+    background-image: url('https://studio-babe.com/wp-content/uploads/2023/04/bg-1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: red;
+    font-family: var(--zombie-font);
+}
+
+#btn-start {
+    display: block;
+    box-sizing: content-box;
+    position: absolute;
+    font-size: 2rem;
+    padding: .5rem 3rem;
+    background-color: white;
+    /* opacity: 0; */
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    /* animation: anim-start-btn 3s linear infinite; */
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 420px;
+    /* background-color: aqua; */
+    padding: 2rem;
+}
+
+.menu div {
+    width: 50%;
+}
+
+.menu-item {
+    display: block;
+    text-align: center;
+    width: 100% !important;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 99999px;
+    /* background-color: rgba(255, 0, 0, .2); */
+    border: 5px solid red;
+    font-family: var(--zombie-font);
+    color: red;
+    font-size: 3rem;
+    height: 140px;
+    transition: all .5s 0s ease;
+    cursor: pointer;
+}
+
+.menu-item small {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-item:hover {
+    background-color: rgb(163, 6, 6);
+    color: white;
+}
+
+.preparing::after {
+    content: 'Now being prepared.';
+    display: block;
+    font-size: 1rem;
+}
+
+.preparing:hover {
+    background-color: gray;
+    border-color: gray;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.title-center {
+    font-size: 2rem;
+    font-family: var(--zombie-font);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.score-title {
+    font-size: 2rem;
+    font-family: var(--zombie-font);
+    text-align: center;
+    position: relative;
+    top: 30%;
+    color: red;
+    transform: translateY(-50%);
+}
+
+.score-result {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    top: 40%;
+    color: red;
+}
+
+.enemy {
+    opacity: 1;
+    transition: opacity .5s 0s ease;
+}
+
+.defeat {
+    opacity: 0;
+}
+
+.restart-btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 1.25rem;
+    height: 6rem;
+    width: 50% !important;
+    transform: translateX(-50%);
+}
